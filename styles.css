@@ -286,6 +286,228 @@
 
 
 
+/*----- start packages section -----*/
+.pricing-heading {
+    font-family: 'Zilla Slab', serif; /* Zilla Slab Font Applied */
+    text-align: center;
+    font-size: 52px;
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+.pricing-highlight {
+    color: #848488;
+}
+
+.pricing-expectation {
+    color: #333333;
+}
+.pricing-description {
+    color: #555555;
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.pricing-highlight-black {
+    color: #000000;
+}
+.logo-packages-section {
+    background-image: url('images/Packages.png'); /* Apni image ka path yahan lagao */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+
+
+.logo-packages-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.logo-packages-heading {
+    margin-bottom: 20px;
+    font-size: 52px;
+    font-weight: 900;
+    color: #333;
+    font-family: 'Zilla Slab', serif; /* Zilla Slab Font Applied */
+    text-align: center;
+}
+
+/* Packages Layout */
+.packages-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.package {
+    background: #ffffffa8;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 280px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    padding: 30px 20px;
+    border: 2px solid #FBB040;
+}
+
+.package:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Best Seller Tag */
+.package.best-seller::before {
+    content: "BEST SELLER";
+    background: #ff3b3b;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+.package h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0px;
+}
+.package h5 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #6868D1;
+}
+.package h6 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #000000;
+}
+
+/* Price Section */
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.price h2 {
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 0;
+    font-size: 30px;
+}
+
+.price strike {
+    font-size: 16px;
+    font-weight: 700;
+    color: red;
+    margin-top: -10px;
+}
+
+.price span {
+    margin-left: -40px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #808080;
+    margin-bottom: -20px;
+}
+
+/* Divider */
+.divider {
+    height: 1px;
+    background-color: #FBB040;
+    margin: 15px 0px;
+}
+
+/* Package List Styling */
+.package-list {
+    list-style-type: none;
+    max-height: 180px;
+    overflow-y: auto;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center; /* List ko center align karna */
+}
+
+
+/* List Items */
+.package-list li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* List Icons (Bullets) */
+.package-list li::before {
+    content: "•";
+    color: #6868D1;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 8px;
+    margin-top: -2px;
+}
+/* Scrollbar Styling */
+.package-list::-webkit-scrollbar {
+    width: 3px;
+}
+
+.package-list::-webkit-scrollbar-thumb {
+    background-color: #6868D1; /* Purple color */
+    border-radius: 10px;
+}
+
+.package-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Package Button */
+.package-btn {
+    background: #6868D1;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    line-height: 1em;
+}
+
+.package-btn:hover {
+    background: #6868D1;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .package {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .package {
+        width: 100%;
+    }
+}
+/*----- end packages section -----*/
 
 
 
@@ -466,6 +688,13 @@
 }
 
 @media (min-width: 600px) and (max-width: 767px) {
+    .pricing-heading {
+        font-family: 'Zilla Slab', serif;
+        text-align: center;
+        font-size: 32px;
+        margin-top: 0px;
+    }
+
     .logo-heading {
         font-size: 42px;
         text-align: left;
@@ -501,8 +730,49 @@
     }
     
 }
+@media (min-width: 401px) and (max-width: 599px) {
 
+    .pricing-heading {
+        font-family: 'Zilla Slab', serif;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 0px;
+        font-weight: 600;
+    }
+    .logo-packages-heading {
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: 900;
+        color: #333;
+        font-family: 'Zilla Slab', serif;
+        text-align: center;
+    }    
+    .pricing-description {
+        color: #555555;
+        font-size: 20px;
+        line-height: 1.1em;
+    }
+    .logo-packages-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 10px;
+        padding-top: 0px;
+    }
+    .logo-packages-section {
+        padding: 50px 0;
+    }
+}
+    
+    
 @media (max-width: 400px) {
+
+    .pricing-heading {
+        font-family: 'Zilla Slab', serif;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 0px;
+    }
 
     .logo-heading {
         font-size: 34px;
@@ -558,3 +828,5 @@
         margin-bottom: 20px;
     }
 }
+
+
