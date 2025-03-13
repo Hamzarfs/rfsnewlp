@@ -1,0 +1,475 @@
+
+
+.our-combo{
+    background: url("../images/bg-combo.webp") no-repeat;
+    background-color: #f8f7fd;
+    max-width: 100%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-position: 50% bottom;
+    padding-top: 100px;
+    padding-bottom: 45px;
+}
+
+
+.our-combo * {
+    z-index: 1;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.our-combo p {
+    margin-bottom: 40px;
+}
+
+.img-combo img{
+    max-width: 120%;
+    position: relative;
+    left: -20px;
+}
+
+.our-combo * {
+    color: #fff;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.combo-detail {
+    display: inline-block;
+    width: 49%;
+    vertical-align: text-top;
+}
+
+.combo-detail h4 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.our-combo h2 {
+    font-size: 61px;
+    margin-bottom: 40px;
+    letter-spacing: -2px;
+}
+
+
+
+.combo-detail ul li {
+    list-style-type: disc;
+    color: #c0c6d3;
+}
+
+.combo-detail ul {
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.info-comb h4 {
+    font-size: 48px;
+    font-family: 'Zilla Slab' , sans-serif;
+    letter-spacing: -2px;
+    line-height: 45px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.info-comb h4 > span {
+    font-size: 45px;
+    line-height: 26px;
+}
+
+.info-comb h4 + p {
+    color: #fff;
+    font-size: 23px;
+    padding: 0px 20px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    background: #152441;
+    inline-size: max-content;
+    position: relative;
+    animation: blink-effect 1s infinite alternate; /* Blink effect */
+}
+
+@keyframes blink-effect {
+    0% { opacity: 1; }
+    20% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.info-comb ul li {
+    display: inline-block;
+    padding: 0 2px;
+    vertical-align: baseline;
+}
+
+.info-comb ul li h5,.info-comb ul li h5 + a {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* .info-comb ul li span::before {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    content: "";
+    background: #2b1683;
+    border-radius: 50%;
+    z-index: -1;
+    left: -14px;
+    top: -12px;
+} */
+
+.info-comb ul li span {
+    position: relative;
+}
+
+.info-comb ul li:first-child h5,.info-comb ul li:first-child a {
+    text-align: right;
+}
+
+.btn-purp {
+    background: rgb(102, 24, 218);
+    background: #FFFFFF;
+    color: #6868D1;
+}
+
+.btn-purp:hover {
+    background: rgb(102, 24, 218);
+    background: #FFFFFF;
+    color: #6868D1;
+}
+
+
+.combo-price .btn {
+    padding: 12px 25px;
+    font-size: 15px;
+    margin: auto;
+    display: table;
+    position: relative;
+    left: 53px;
+}
+
+.combo-price h5 {
+    font-size: 22px;
+    text-align: right;
+    margin-bottom: 0;
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+.combo-price h3 {
+    font-size: 94px;
+    font-weight: 700;
+    /* color: #ffda2f; */
+    margin-bottom: 5px;
+    text-align: right;
+    letter-spacing: -7px;
+}
+
+.combo-price {
+    position: relative;
+    margin-right: -20px;
+    margin-top: -30px;
+}
+
+.img-all {
+    position: absolute;
+    top: 30px;
+    left: -10px;
+}
+
+.combo-price h3 > span {
+    color: #fff;
+    font-size: 37px;
+    font-weight: 500;
+}
+
+
+
+
+/* .info-combo::before {
+    position: absolute;
+    content: "";
+     left: -80px;
+    bottom: -19.1px;
+    transform: skew(10deg, -2deg);
+    max-width: 957px;
+    height: 295px;
+    width: 130%;
+    background: url(../images/bg6.png) 0% 0% / cover no-repeat;
+} */
+
+/* .info-combo::before {
+    position: absolute;
+    content: "";
+    left: -13px;
+    z-index: -1;
+    top: 4955px;
+    bottom: -19.1px;
+    transform: skew(10deg, -2deg);
+    max-width: 957px;
+    height: 295px;
+    width: 130%;
+    background: url(../images/bg6.png) 0% 0% / cover no-repeat;
+} */
+
+.allinone {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust spacing between items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.allinone li {
+    display: flex;
+    align-items: center;
+}
+
+.allinone li span {
+    background: #2c2c98;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.info-combo {
+    
+    margin-top: 30px;
+}
+
+.c-row{
+    align-items: center;
+}
+
+.count {
+    padding: 40px 0;
+    margin: 30px 0 0;
+    text-align: center;
+    position: relative;
+}
+
+.count::before {content: "";width: 100%;height: 100%;position: absolute;left: -80px;top: 0;background: rgb(163,43,158);background: linear-gradient(45deg, rgba(163,43,158,1) 0%, rgba(91,23,181,1) 100%);}
+
+
+
+
+.combo-banner + .our-pricing {
+    padding-top: 0;
+}
+
+.combo-banner + .our-pricing::before,.combo-banner + .our-pricing::after {
+    display: none;
+}
+
+.allinonecombobg {
+    background-color: #6868D1;
+    border-radius: 32px 50px 0px 0px !important;
+    padding: 26px 50px 40px 14px;
+    position: relative;
+    /* clip-path: polygon(0% 20%, 100% 5%, 95% 100%, 5% 100%); */
+    transform: rotate(-2deg);
+}
+
+
+/* Extra effect for the slant */
+.allinonecombobg::before {
+    /* border-radius: 150px 50px 20px 20px !important; */
+    border-radius: 32px 50px 0px 0px !important;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6868D1;
+    /* clip-path: polygon(0% 20%, 100% 5%, 95% 100%, 5% 100%);
+    transform: rotate(-3deg);  */
+    z-index: -1;
+    top: 13px;
+}
+
+
+/* CTA */
+
+.ctasectiontwo {
+    background-color: #152441;
+    color: #fff;
+    padding: 50px 0;
+}
+.ctasectiontwo h2 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.ctasectiontwo h2 .highlight {
+    background-color: #6868D1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.ctasectiontwo h2 .light-highlight {
+    text-decoration: underline;
+    text-decoration-color: #6868D1;
+}
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+.contact-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contact-list li img {
+    width: 76px;
+    /* height: 29px; */
+    margin-right: 10px;
+}
+
+.contact-list li a {
+    text-decoration: none; 
+    color: inherit; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #6868D1;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.cta-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* CTA */
+
+
+
+
+
+/* Gallery */
+
+.lpgallery h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #4A4A4A;
+}
+
+.lpgallery .highlighted-text {
+    font-weight: 700;
+    color: #000;
+    display: inline-block;
+    position: relative;
+}
+
+.lpgallery .highlighted-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 5px;
+    background-color: #6868D1;
+}
+
+.lpgallery .gallery-item {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.lpgallery .view-portfolio {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.lpgallery .view-portfolio .icon {
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+
+/* End Gallery */
+
+@media (max-width: 1200px){
+img.allforjust {
+    display: none;
+}
+.allinonecombobg {
+    margin-bottom: 38px;
+}
+
+.combo-price h5 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 0;
+    text-decoration: line-through;
+    font-weight: 400;
+    margin-top: 46px;
+}
+
+
+.combo-price h3 {
+  
+    text-align: center;
+   
+}
+.combo-price .btn {
+ 
+    left: 0;
+}
+}
+
+
+
+@media (max-width: 768px) {
+.allinonecombobg {
+    margin-bottom: 38px;
+}
+
+.combo-price h5 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 0;
+    text-decoration: line-through;
+    font-weight: 400;
+    margin-top: 46px;
+}
+
+
+.combo-price h3 {
+  
+    text-align: center;
+   
+}
+.combo-price .btn {
+ 
+    left: 0;
+}
+
+}
+
+

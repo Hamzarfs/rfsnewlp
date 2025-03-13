@@ -495,6 +495,93 @@
     background: #6868D1;
 }
 
+
+
+/* CTA  */
+
+
+.cta{
+    background: url("../images/bg-cta.jpg") no-repeat;
+    max-width: 100%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: 50%;
+    background-color: #152441;
+}
+
+.cta h3 {
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #fff;
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 1;
+}
+
+.cta h3 > span {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.cta h3::before {
+    width: 220px;
+    height: 12px;
+    background: #ffda2f;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: -60px;
+}
+
+.cta ul li:first-child a {
+    font-size: 30px;
+}
+
+.cta ul li a {
+    color: #fff !important;
+    font-size: 22px;
+}
+
+.cta ul li a span {
+    display: block;
+    line-height: 16px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cta ul li img {
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.cta ul li {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 25px;
+}
+
+.cta ul {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.cta ul li:last-child {
+    margin-bottom: 0;
+}
+
+.img-cta {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    max-width: 40%;
+}
+
+
+/* CTA */
+
 /* Responsive Design */
 @media (max-width: 1000px) {
     .package {
