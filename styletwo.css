@@ -447,11 +447,237 @@
     opacity: 1;
 }
 
+/* End Gallery  */
+
+
+/* Process Step */
+
+/* Process Steps Section */
+/* Process Steps Section Styles */
+.processsteps {
+    background-image: url(/images/processbg.png);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+    padding: 80px 0;
+    position: relative;
+    text-align: center;
+}
+
+/* Headings Styling */
+.heading-top {
+    color: #666;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.heading-bottom {
+    font-size: 34px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+.highlight {
+    color: #6868D1;
+    position: relative;
+    display: inline-block;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #6868D1;
+}
+
+.subtext {
+    color: #666;
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+/* Steps Connection System */
+.step-row {
+    position: relative;
+    /* margin: 80px 0; */
+    /* padding: 120px 0 40px; */
+}
+
+/* Main Horizontal Line */
+.step-line {
+    position: absolute;
+    top: -272px;
+    left: 0;
+    width: 75.4%;
+    position-area: center;
+    height: 4px;
+    background: #6868D1;
+}
+
+/* Vertical Connectors for Steps */
+.step-row .col-md-3 {
+    position: relative;
+    padding-top: 100px;
+}
+
+/* .step-row .col-md-3::before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 4px;
+    height: 40px;
+    background: #6868D1;
+    transform: translateX(-50%);
+} */
+
+.step-row .col-md-3::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 4px;
+    height: 40px;
+    background: #6868D1;
+    transform: translateX(-50%);
+}
+
+/* Step Number Styling */
+.step-number {
+    position: relative;
+    display: inline-block;
+    color: #6868D1;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    z-index: 1;
+}
+
+.step-number::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border: 4px solid #6868D1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.step-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+.latest-logo-buttons {
+    margin-top: 40px;
+}
+
+.btn-latest-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 10px;
+    background: #6868D1;
+    color: #fff;
+    border: 2px solid #6868D1;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-latest-outline {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 10px;
+    background: transparent;
+    color: #6868D1;
+    border: 2px solid #6868D1;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-latest-primary:hover,
+.btn-latest-outline:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(104, 104, 209, 0.3);
+}
+
+@media (max-width: 768px) {
+    .step-row .col-md-3 {
+        margin-bottom: 60px;
+    }
+    .step-row {
+        padding: 0px 0 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .step-line {
+        position: absolute;
+        top: -290px;
+        left: 0;
+        width: 75.4%;
+        height: 4px;
+        background: #6868D1;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+.step-line {
+    position: absolute;
+    top: -361px;
+    left: 0;
+    width: 75.4%;
+    position-area: center;
+    height: 4px;
+    background: #6868D1;
+}
+}
+
+/* Process Step */
+
 
 /* Fully Responsive */
 @media (max-width: 768px) {
     .lpgallery .gallery-item {
         height: 150px; /* Smaller height on mobile */
+    }
+
+
+    .step-line {
+        display: none;
+    }
+
+
+    .step-row .col-md-3::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        width: 4px;
+        height: 40px;
+        background: #6868D1;
+        transform: translateX(-50%);
+        display: none;
+    }
+    .step-row .col-md-3 {
+        position: relative;
+        padding-top: 0px;
     }
 }
 
