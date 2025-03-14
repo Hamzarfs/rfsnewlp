@@ -9,6 +9,9 @@
     font-family: Poppins;
     word-spacing: 50%;
 }
+body{
+    background-color: #f8f7fc;
+}
 
 .top-bar a {
     color: #646bd9;
