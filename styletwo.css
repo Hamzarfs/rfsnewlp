@@ -586,35 +586,8 @@ background-position: center;
     margin-top: 40px;
 }
 
-.btn-latest-primary {
-    display: inline-block;
-    padding: 12px 30px;
-    margin: 10px;
-    background: #6868D1;
-    color: #fff;
-    border: 2px solid #6868D1;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
 
-.btn-latest-outline {
-    display: inline-block;
-    padding: 12px 30px;
-    margin: 10px;
-    background: transparent;
-    color: #6868D1;
-    border: 2px solid #6868D1;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
 
-.btn-latest-primary:hover,
-.btn-latest-outline:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(104, 104, 209, 0.3);
-}
 
 @media (max-width: 768px) {
     .step-row .col-md-3 {
