@@ -1,5 +1,5 @@
 
-
+/* Start All in one combo section */
 .our-combo{
     background: url("../images/bg-combo.webp") no-repeat;
     background-color: #f8f7fd;
@@ -295,6 +295,10 @@
 }
 
 
+
+/* Start All in one combo section */
+
+
 /* CTA */
 
 .ctasectiontwo {
@@ -366,6 +370,10 @@
 
 /* Gallery */
 
+.lpgallery {
+    text-align: center;
+}
+
 .lpgallery h2 {
     font-size: 28px;
     font-weight: 600;
@@ -389,13 +397,22 @@
     background-color: #6868D1;
 }
 
-.lpgallery .gallery-item {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 5px;
+/* Gallery Grid */
+.lpgallery .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -5px; /* Negative margin to reduce extra spacing */
 }
 
+.lpgallery .col-md-3, 
+.lpgallery .col-6 {
+    padding: 5px; /* Less spacing between images */
+}
+
+
+
+/* View Portfolio Button */
 .lpgallery .view-portfolio {
     display: inline-flex;
     align-items: center;
@@ -406,9 +423,35 @@
     padding-top: 10px;
 }
 
-.lpgallery .view-portfolio .icon {
-    font-size: 14px;
-    margin-right: 8px;
+
+.lpgallery .gallery-item {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.lpgallery .gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.modal-content {
+    background: transparent;
+}
+
+.btn-close {
+    filter: invert(1);
+    opacity: 1;
+}
+
+
+/* Fully Responsive */
+@media (max-width: 768px) {
+    .lpgallery .gallery-item {
+        height: 150px; /* Smaller height on mobile */
+    }
 }
 
 
