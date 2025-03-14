@@ -794,6 +794,188 @@ body{
 
 
 
+/* ------------------------- Start Footer Styling ----------------- */
+.fa {
+	padding-left: 13px;
+	display: inline-block;
+	font: normal normal normal 14px / 1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.footer-org-btn {
+    width: auto;
+    max-width: 170px;
+    color: #fff;
+    text-align: center;
+    background-color: #646bd9;
+    margin-bottom: 20px;
+}
+.footer-container button:hover {
+	background-color: rgb(32, 5, 104);
+}
+.footer-container {
+	padding: 20px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.footer-container .icon-list {
+	list-style: none;
+	padding: 0;
+}
+
+.footer-container .icon-list li {
+	margin-top: 10px;
+}
+
+.footer-container input[type="text"],
+.footer-container input[type="email"],
+.footer-container input[type="tel"],
+.footer-container textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+.footer-container button {
+	padding: 10px 20px;
+	border: none;
+	background-color: #F14772;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+}
+
+
+
+.footer-container textarea {
+	height: 100px;
+}
+
+
+.bg-orange {
+	background-color: #101010;
+	color: white;
+	justify-content: center;
+	text-align: center;
+	padding: 10px;
+	padding-bottom: 0px;
+
+}
+
+.footer-text {
+	color: white;
+}
+
+.footer-link {
+	color: white;
+	text-decoration: none;
+	/* Yadi chahe toh link underline ko hatane ke liye */
+}
+
+.footer-link:hover {
+	text-decoration: underline;
+	/* Yadi chahe toh link par hover karne pe underline add kar sakte hain */
+}
+
+
+/* our process */
+
+
+.count {
+	position: relative;
+	display: inline-block;
+	color: black;
+	text-align: center;
+	/* Center align the text */
+}
+
+.background-number {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 120px;
+	/* Adjust the size as needed */
+	color: #fff;
+	/* Color of the background number */
+	width: 100%;
+	/* Ensure the background covers the entire container */
+	height: 100%;
+	/* Ensure the background covers the entire container */
+	display: flex;
+	/* Use flexbox for vertical and horizontal centering */
+	justify-content: center;
+	/* Center horizontally */
+	align-items: center;
+	/* Center vertically */
+}
+
+.text-on-top {
+	position: relative;
+	z-index: 1;
+}
+
+.count:hover .background-number {
+	color: #a47aff;
+	/* Change background color on hover */
+}
+
+.count:hover .text-on-top {
+	color: #000;
+	/* Change background color on hover */
+}
+
+
+.special-offer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.left-special-offer {}
+
+.right-special-offer {}
+
+.zoom-animation {
+	animation: zoomInOut 5s infinite alternate;
+	/* Adjust the duration and other properties as needed */
+}
+
+@keyframes zoomInOut {
+	0% {
+		transform: scale(0.7);
+		/* Initial zoom level */
+	}
+
+	100% {
+		transform: scale(1);
+		/* Zoomed in level */
+	}
+}
+
+/* our process */
+
+.desktop-logo {
+	margin: 10px 0px 0px 0px;
+}
+
+.mobile-logo {
+	margin: 10px 0px 10px 0px;
+	height: 160px !important;
+
+}
+
+/* ------------------------- End Footer Styling ----------------- */
+
+
+
 
 @media (max-width: 1200px) and (min-width: 995px) {
     /* Heading */

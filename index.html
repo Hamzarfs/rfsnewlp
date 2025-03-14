@@ -919,7 +919,183 @@
 
 
 
-    
+    <!-- Start Footer Section -->
+<footer>
+    <form method="POST" action="PHPMailer/site_form.php" id="bottomform" onsubmit="handleCallBackSubmit()" enctype="multipart/form-data">
+        <div class="container-fluid footer-container" style="background-image: url(images/Footer.png); color: #fff;">
+            <div class="container">
+                <div class="row">
+                    <!-- Left Column -->
+                    <div class="col-md-5 footer-column1">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="./images/Logo1-02.png" alt="Logo" class="mobile-logo-footer" style="width:200px;">
+                            </div>
+                            <div class="col-md-12">
+                                <p style="margin-top: 26px;">
+                                With our Logo and graphics design services, we provide cutting-edge solutions and incorporate custom 
+                                logos that reflect your ideals and aspirations. We make excellent strategies that help your business 
+                                stand out from the rest. Elevate your brand with us today!                                
+                            </p>
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="row">
+                            <div class="col-md-12 d-flex justify-content-start mobile-center">
+                                <a href="https://wa.me/+447380107663" class="btn me-2 footer-org-btn combo-btn2">Live Chat</a>
+                                <a href="tel:+02045112054" class="btn me-2 footer-org-btn combo-btn2">Call Now</a>
+                            </div>
+                        </div>
+
+                     <!-- Phone -->
+                    <div class="row">
+                        <ul class="icon-list">
+                            <li>
+                                <img src="images/Phone.png" alt="Phone" style="width: 30px; height: 30px; margin-right: 10px;">
+                                <a href="tel:+02045112054" style="color: inherit; text-decoration: none;">
+                                    0204-511-2054
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="row">
+                        <ul class="icon-list">
+                            <li>
+                                <img src="images/mail.png" alt="Email" style="width: 30px; height: 30px; margin-right: 10px;">
+                                <a href="mailto:support@creativelogodesign.co.uk" style="color: inherit; text-decoration: none;">
+                                    support@creativelogodesign.co.uk
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="row">
+                        <ul class="icon-list">
+                            <li>
+                                <img src="images/location.png" alt="Address" style="width: 30px; height: 30px; margin-right: 10px;">
+                                    41 Winthrop Rd, Edison, NJ 08817            
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                        <!-- Social Icons -->
+                        <div class="social-icons d-flex text-center py-3">
+                            <a href="https://www.facebook.com/Creativelogodesignuk/" target="_blank" class="text-light">
+                                <i class="fa fa-facebook-f" style="font-size: 25px;"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/creativelogo-design-uk/" target="_blank" class="text-light">
+                                <i class="fa fa-linkedin" style="font-size: 25px;"></i>
+                            </a>
+                            <a href="https://www.instagram.com/creative_logo_design_uk/" target="_blank" class="text-light">
+                                <i class="fa fa-instagram" style="font-size: 25px;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column - Callback Form -->
+                    <div class="col-md-6 footer-column2" style="
+                        background-color: #00000017; 
+                        padding: 20px; 
+                        border-radius: 8px; 
+                        border: 0.01px solid white; 
+                        width: 400px; 
+                        height: 364px; 
+                        margin-top: 71px; 
+                        margin-left: auto;">
+                        <!-- Heading -->
+                        <h3 style="color: white; text-align: center; margin-top: 20px;">Request a Callback</h3>
+
+                        <input type="hidden" name="gclid" value="<?php echo $_REQUEST['gclid']?>">
+
+                        <!-- Hidden Inputs -->
+                        <input type="hidden" value="<?php echo $_SESSION['random_number']; ?>" name="random_number" id="random_number">
+                        <input type="hidden" value="<?php echo $_SESSION['csrf_token']; ?>" name="csrf_token" id="csrf_token">
+
+                        <!-- Name Input -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="botName" style="color: white;">Name</label>
+                                <input 
+                                    type="text" 
+                                    id="botName" 
+                                    name="botName" 
+                                    size="40" 
+                                    class="input" 
+                                    placeholder="Enter your name" 
+                                    pattern="^[a-zA-Z][a-zA-Z ]{0,49}$" 
+                                    title="Only letters and spaces are allowed." 
+                                    required 
+                                    maxlength="55" 
+                                    oninput="validateName(this)" 
+                                    style="width: 100%; padding: 10px; border-radius: 5px; margin-top: 5px;"
+                                >
+                                <div class="error-message" style="display:none;">Please enter your name in alphabets</div>
+                            </div>
+                        </div>
+
+                        <!-- Phone/Mobile Input -->
+                        <div class="row" style="margin-top: 5px;">
+                            <div class="col-md-12">
+                                <label for="botNumber" style="color: white;">Tel/Mobile</label>
+                                <input 
+                                    type="tel" 
+                                    id="botNumber" 
+                                    name="botNumber" 
+                                    placeholder="Phone Number" 
+                                    class="input" 
+                                    required 
+                                    pattern="^\+?\d{10,15}$" 
+                                    title="Phone number format: 07775555507 or +447775555507" 
+                                    oninput="validatePhone(this)" 
+                                    style="width: 100%; padding: 10px; border-radius: 5px; margin-top: 5px;"
+                                >
+                                <div class="error-message" style="display:none;">Please enter a valid phone number</div>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="loader-cb" class="loader-cb" style="display: none; font-size: 12px;">
+                                    Submitting... Please be patient.
+                                </div>
+                                <button 
+                                    type="submit" 
+                                    id="submit-cb" 
+                                    style="width: 100%; padding: 11px; background-color: #6868d1; color: white; border: none; border-radius: 5px; margin-top: 10px; font-size: 15px;">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</footer>
+
+<!-- Footer Bottom -->
+<div class="container-fluid bg-orange">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-6 col-sm-12">
+                <p class="footer-text">© Copyrights 2025 | All Rights Reserved Creative Logo Design</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <a href="privacy-policy.html" target="_blank" class="footer-link">Privacy Policy</a> |
+                <a href="terms-and-conditions.html" target="_blank" class="footer-link">Terms & Conditions</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Footer Section -->
+
 
 
 
