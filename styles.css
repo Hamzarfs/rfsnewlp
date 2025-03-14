@@ -101,7 +101,7 @@
     font-size: 18px;
     line-height: 1.6;
     padding-right: 180px ;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     text-align: justify;
 }
 
@@ -112,24 +112,6 @@
 }
 
 /* Button Styling */
-.custom-btn {
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 8px;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-}
-
-
-/* Different Button Styles */
-.avail-discount-btn {
-    background-color: #6868D1;
-    color: white;
-    border: 1px solid #6868D1;
-
-}
 
 .view-pricing-btn {
     background-color: #001cf300;
@@ -220,6 +202,7 @@
 .button-container {
     display: flex;
     justify-content: center;
+    text-align: center;
     gap: 15px;
     margin-top: 30px;
 }
@@ -318,7 +301,19 @@
     background-position: center;
     padding: 50px 0;
 }
-
+.pdfSec {
+    text-align: left;
+    margin-bottom: 10px;
+}
+.pdfSec strong {
+    display: block;
+    margin-bottom: 5px;
+}
+.pdfSec img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 .logo-packages-container {
     max-width: 1200px;
@@ -425,6 +420,9 @@
     color: #808080;
     margin-bottom: -20px;
 }
+.best-seller{
+    background-color: #e4e1ff;
+}
 
 /* Divider */
 .divider {
@@ -493,6 +491,12 @@
 
 .package-btn:hover {
     background: #6868D1;
+}
+.file-formats {
+    font-weight: 700;
+    font-size: 11px;
+    margin-left: -96px;
+    margin-bottom: -40px;
 }
 
 
@@ -594,7 +598,158 @@
         width: 100%;
     }
 }
+
 /*----- end packages section -----*/
+
+
+
+
+        .latest-logo-section {
+            background: url("images/latest.png") no-repeat center center;
+            background-size: cover;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+       .latest-logo-title {
+            font-size: 52px;
+            font-family: 'Zilla Slab', serif; /* Zilla Slab Font Applied */
+            font-weight: 600;
+            color: #848488;
+        }
+
+        .latest-logo-title span {
+            color: black; /* "Custom Quality Logo Designs" को Black करें */
+            font-size: 52px;
+            font-family: 'Zilla Slab', serif; /* Zilla Slab Font Applied */
+            font-weight: 700;
+            z-index: 100;
+        }
+
+        .quality-logo {
+            position: relative;
+        }
+
+        .quality-logo::after {
+            content: "";
+            display: block;
+            width: 100%; /* Underline पूरे text के नीचे आए */
+            height: 8px; /* Underline की मोटाई */
+            background-color:#646bd9; /* Underline का color */
+            position: absolute;
+            bottom: 5px; /* Underline text के ठीक नीचे हो */
+            left: 0;
+            z-index: -100;
+        }
+
+
+     
+        .latest-logo-subtitle {
+            font-size: 18px;
+            color: #666;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .latest-logo-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .latest-logo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .latest-logo-card img {
+            width: 60px;
+        }
+
+        .latest-logo-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: #000;
+            display: flex;
+            align-items: center;
+        }
+
+        .latest-logo-name::before {
+            content: "";
+            width: 30px;
+            height: 3px;
+            background: #646bd9;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .latest-logo-text {
+            color: #444;
+            font-size: 16px;
+        }
+
+        .latest-logo-buttons {
+            margin-top: 30px;
+        }
+
+        .btn-latest-primary {
+            background: #646bd9;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+            border: 1px solid #646bd9;
+            margin-bottom: 10px;
+        }
+
+        .btn-latest-primary:hover {
+            background: #4c50b6;
+        }
+
+        .btn-latest-outline {
+            border: 1px solid #646bd9;
+            color: #646bd9;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            gap: 15px;
+            display: inline-block;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        
+
+
+        @media (max-width: 993px) and (min-width: 767px) {
+            .latest-logo-card {
+                display: flex;
+                flex-direction: column; /* Column layout ताकि icon ऊपर और heading नीचे आए */
+                align-items: center;
+                text-align: center;
+            }
+        
+            .latest-logo-card img {
+                margin-bottom: 10px; /* Icon और Text के बीच गैप */
+            }
+        
+            .latest-logo-name,
+            .latest-logo-text {
+                text-align: center;
+            }
+        }
+        
+
+
 
 
 
@@ -615,12 +770,7 @@
 
     }
 
-    /* Button Group */
-    .btn-group {
-        flex-direction: row;
-        justify-content: start;
-        gap: 12px;
-    }
+
 
     .custom-btn {
         font-size: 16px;
@@ -669,13 +819,7 @@
 
     }
 
-    /* Button Group */
-    .btn-group {
-        flex-direction: row;
-        justify-content: start;
-        gap: 12px;
-    }
-
+    
     .custom-btn {
         font-size: 16px;
         padding: 12px 18px;
@@ -726,17 +870,11 @@
         font-size: 16px;
         line-height: 1.6;
         padding-right: 00px;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         text-align: justify;
         }
 
-    /* Button Group */
-    .btn-group {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-    }
-
+  
     .custom-btn {
         width: 100%;
         max-width: 280px;
@@ -850,6 +988,7 @@
         padding: 50px 0;
     }
 }
+
     
     
 @media (max-width: 400px) {
@@ -914,6 +1053,13 @@
         margin-top: 0px;
         margin-bottom: 20px;
     }
+    .logo-packages-heading {
+        font-size: 32px;
+    
+}
+.packages-container {
+    margin-bottom: 20px;
+    padding: 0px 10px;
 }
 
-
+}
