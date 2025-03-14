@@ -728,8 +728,6 @@
         }
 
         
-
-
         @media (max-width: 993px) and (min-width: 767px) {
             .latest-logo-card {
                 display: flex;
@@ -748,7 +746,48 @@
             }
         }
         
-
+        .lets-talk-section {
+            background: url('images/letstalk.png') no-repeat center center/cover;
+            color: white;
+            padding: 57px 0;
+            background-color: #f8f7fc;
+            
+           
+        }
+        .lets-talk-text {
+            font-weight: bold;
+            font-size: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .contact-info-1 p {
+            font-weight: 600;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            font-size: 32px;
+        }
+        .contact-info-1 img {
+            width: 75px;
+            height: 75px;
+            margin-right: 20px;
+        }
+        @media (max-width: 768px) {
+            .lets-talk-section {
+                text-align: center;
+                padding: 30px 15px;
+            }
+            .lets-talk-text {
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+            .contact-info-1 {
+                text-align: center;
+            }
+        }
 
 
 
